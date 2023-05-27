@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Recap</title>
+</head>
+<body>
+    <nav style="text-align: center; background-color: black;"><!-- nav -->
+        <a style="padding: 3rem" href="#custinfo">Customer Information</a>
+        <a style="padding: 3rem" href="#options">Options</a>
+        <a style="padding: 3rem" href="#sizes">Sizes</a>
+        <a style="padding: 3rem" href="#video">Video Distraction</a>
+    </nav>
+    
+    <h1>Assignment: HTML Recap (notes in code)</h1>
+    <hr>
+    <h2>Customer Information</h2>
+    <hr>
+    <div><!-- form, input and div elements !-->
+        <form id="custinfo"><!-- input fields !-->
+            <fieldset>
+                <legend>Customer Info</legend>
+                <p>
+                    <label>Customer Name: <input name="name"></label>
+                </p>
+                <p>
+                    <label>Telephone: <input type="tel" name="tel" minlength="10" maxlength="10"></label>
+                </p>
+                <p>
+                    <label>Email Address: </label> <input type="email" name="email"></label>
+                </p>
+            </fieldset>
+        </form>
+        <br>
+        <form id="options"><!-- radio buttons !-->
+            <fieldset>
+                <Legend>Options</Legend>
+                <p>
+                    <input type="radio" name="options" id="lorem" value="lorem">
+                    <label for="lorem">Lorem</label>
+                </p>
+                <p>
+                    <input type="radio" name="options" id="ipsum" value="ipsum">
+                    <label for="ipsum">Ipsum</label>
+                </p>
+                <p>
+                    <input type="radio" name="options" id="dolor" value="dolor">
+                    <label for="dolor">Dolor</label>
+                </p>
+            </fieldset>
+        </form>
+        <br>
+        <form id="sizes"><!-- checkboxes !-->
+            <fieldset>
+                <legend>Sizes</legend>
+                <p>
+                    <input type="checkbox" name="sizes" id="small" value="small">
+                    <label for="small">Small</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="sizes" id="medium" value="medium">
+                    <label for="medium">Medium</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="sizes" id="large" value="large">
+                    <label for="large">Large</label>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    <h2>And now for something completely different: Check out this AEW video!</h2><!-- iframe !-->
+    <hr>
+    <div>
+    <iframe id="video" src="https://www.youtube.com/embed/ByAXCjqBzLg" frameborder="10" width="560" height="300" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <small>Code written by Joe Lee. 5/26/23</small>
+</body>
+</html>
